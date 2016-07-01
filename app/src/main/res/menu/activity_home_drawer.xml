@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_padc_linkedin"
+            android:icon="@drawable/ic_recent_actors_black_24dp"
+            android:title="PADC LinkedIn" />
+        <item
+            android:id="@+id/nav_padc_job_search"
+            android:icon="@drawable/ic_event_note_black_24dp"
+            android:title="PADC Job Search" />
+        <item
+            android:id="@+id/nav_padc_pulse"
+            android:icon="@drawable/ic_flash_on_black_24dp"
+            android:title="PADC Pulse" />
+        <item
+            android:id="@+id/nav_padc_movie"
+            android:icon="@drawable/ic_movie_creation_black_24dp"
+            android:title="PADC Movie" />
+        <item
+            android:id="@+id/nav_padc_wanzim"
+            android:icon="@drawable/ic_domain_black_24dp"
+            android:title="PADC Wanzim"
+            />
+    </group>
+
+    <!--<item android:title="Communicate">-->
+        <!--<menu>-->
+            <!--<item-->
+                <!--android:id="@+id/nav_share"-->
+                <!--android:icon="@drawable/ic_menu_share"-->
+                <!--android:title="Share" />-->
+            <!--<item-->
+                <!--android:id="@+id/nav_send"-->
+                <!--android:icon="@drawable/ic_menu_send"-->
+                <!--android:title="Send" />-->
+        <!--</menu>-->
+    <!--</item>-->
+
+</menu>
