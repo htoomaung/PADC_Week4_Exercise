@@ -1,12 +1,393 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
+
+    <!--Job Alert Toogle Block-->
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/big_border"
+            android:padding="16dp"
+
+            >
+            <ImageView
+                android:id="@+id/iv_job_alert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_add_alert_black_32dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create a job  alert"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="36dp"
+                android:textStyle="bold"
+                />
+
+            <Switch
+                android:id="@+id/st_create_job_alert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                />
+
+
+
+        </RelativeLayout>
+
+
+
+    <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+
+                >
+                <RelativeLayout
+                    android:id="@+id/rl_img_job1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+
+                    >
+                    <ImageView
+                        android:id="@+id/iv_job1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxWidth="32dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitStart"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/standard_chartered"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rl_job_item_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_alignLeft="@+id/rl_img_job1"
+                    android:layout_marginLeft="48dp"
+
+
+                    >
+                    <TextView
+                        android:id="@+id/tv_job1_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Developer/ Senior Developer"
+                        android:textSize="18dp"
+
+                        />
+                    <TextView
+                        android:id="@+id/tv_job1_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Standard Chartered Bank"
+                        android:textSize="14dp"
+                        android:layout_below="@+id/tv_job1_title"
+                        />
+                    <TextView
+                        android:id="@+id/tv_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:layout_below="@+id/tv_job1_description"
+                        android:text="Singapore"
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxWidth="32dp"
+                        android:scaleType="centerCrop"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/new_status"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="16dp"
+                        android:layout_alignRight="@+id/tv_job1_description"
+
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/textline"
+                        android:layout_marginTop="4dp"
+                        />
+
+                </RelativeLayout>
+
+
+
+            </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="PADC Job Search"
-        android:id="@+id/textView2"
-        android:layout_gravity="center" />
-</FrameLayout>
+        android:padding="16dp"
+
+        >
+        <RelativeLayout
+            android:id="@+id/rl_img_job2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            >
+            <ImageView
+                android:id="@+id/iv_job2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="32dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitStart"
+                android:layout_centerVertical="true"
+                android:src="@drawable/fb_logo"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_job2_item_description"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignLeft="@+id/rl_img_job1"
+            android:layout_marginLeft="48dp"
+
+
+            >
+            <TextView
+                android:id="@+id/tv_job2_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Client Patner / Mobile Publisher \n Sale-Japan"
+                android:textSize="18dp"
+
+                />
+            <TextView
+                android:id="@+id/tv_job2_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Facebook"
+                android:textSize="14dp"
+                android:layout_below="@+id/tv_job2_title"
+                />
+            <TextView
+                android:id="@+id/tv_location2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:layout_marginTop="4dp"
+                android:layout_below="@+id/tv_job2_description"
+                android:text="Singapore"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3w"
+                android:layout_alignParentRight="true"
+                android:layout_alignRight="@+id/tv_job2_description"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/textline"
+                android:layout_marginTop="8dp"
+                />
+
+        </RelativeLayout>
+
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+
+        >
+        <RelativeLayout
+            android:id="@+id/rl_img_job3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            >
+            <ImageView
+                android:id="@+id/iv_job3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="32dp"
+                android:scaleType="fitStart"
+                android:layout_centerVertical="true"
+                android:adjustViewBounds="true"
+                android:src="@drawable/sap_logo"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_job3_item_description"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignLeft="@+id/rl_img_job1"
+            android:layout_marginLeft="48dp"
+
+
+            >
+            <TextView
+                android:id="@+id/tv_job3_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="SAP Patner Solution Center \n Head for APJ &amp; Greater China "
+                android:textSize="18dp"
+
+                />
+            <TextView
+                android:id="@+id/tv_job3_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SAP"
+                android:textSize="14dp"
+                android:layout_below="@+id/tv_job3_title"
+                />
+            <TextView
+                android:id="@+id/tv_location3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:layout_below="@+id/tv_job3_description"
+                android:text="Singapore 01"
+                android:layout_marginBottom="8dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3w"
+                android:layout_alignParentRight="true"
+                android:layout_alignRight="@+id/tv_job3_description"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/textline"
+                android:layout_marginTop="16dp"
+                />
+
+        </RelativeLayout>
+
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+
+        >
+        <RelativeLayout
+            android:id="@+id/rl_img_job4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            >
+            <ImageView
+                android:id="@+id/iv_job4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="32dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitStart"
+                android:layout_centerVertical="true"
+                android:src="@drawable/saleforce_logo"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_job4_item_description"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignLeft="@+id/rl_img_job1"
+            android:layout_marginLeft="48dp"
+
+
+            >
+            <TextView
+                android:id="@+id/tv_job4_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Technical Artchitect / Marketing \n Cloud"
+                android:textSize="18dp"
+
+                />
+            <TextView
+                android:id="@+id/tv_job4_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Salesforce.com"
+                android:textSize="14dp"
+                android:layout_below="@+id/tv_job4_title"
+                />
+            <TextView
+                android:id="@+id/tv_location4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:layout_below="@+id/tv_job4_description"
+                android:text="Singapore"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1w"
+                android:layout_alignParentRight="true"
+                android:layout_alignRight="@+id/tv_job4_description"
+                android:layout_marginTop="4dp"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/textline"
+                />
+
+        </RelativeLayout>
+
+
+
+    </FrameLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
