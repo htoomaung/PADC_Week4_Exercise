@@ -1,12 +1,174 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
-
-    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#cfd2d5"
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/photographing_landscapes_3e"
+        android:adjustViewBounds="true"
+        />
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="PADC Pulse"
-        android:id="@+id/textView3"
-        android:layout_gravity="center" />
+        android:maxWidth="30dp"
+        android:src="@drawable/location_detect_icon"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="30dp"
+        android:src="@drawable/cogwheel_icon"
+        android:adjustViewBounds="true"
+        android:layout_gravity="right"
+        android:scaleType="centerCrop"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="30dp"
+        android:src="@drawable/search_icon"
+        android:adjustViewBounds="true"
+        android:layout_gravity="right"
+        android:scaleType="centerCrop"
+        android:layout_marginRight="64dp"
+        android:layout_marginTop="16dp"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="30dp"
+        android:src="@drawable/person_icon"
+        android:adjustViewBounds="true"
+        android:layout_gravity="right"
+        android:scaleType="centerCrop"
+        android:layout_marginRight="112dp"
+        android:layout_marginTop="16dp"
+        />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="300dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="70dp"
+        >
+        <ImageView
+            android:id="@+id/iv_fav_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="70dp"
+            android:src="@drawable/android_character_in_circle_background"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:layout_centerHorizontal="true"
+            />
+        <TextView
+            android:id="@+id/tv_welcome_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Good Morning, Droid Man"
+            android:textColor="#fff"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/iv_fav_icon"
+            android:layout_marginTop="8dp"
+            />
+        <TextView
+            android:id="@+id/tv_welcome_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Here are your top stories for the day"
+            android:textColor="#fff"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tv_welcome_title"
+            />
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="290dp"
+        android:background="#fff"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_gravity="bottom"
+        android:padding="8dp"
+
+        >
+        <TextView
+            android:id="@+id/tv_editor_pick_title"
+            android:text="Editor's Pick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="14dp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3h"
+            android:layout_alignParentRight="true"
+            />
+        <TextView
+            android:id="@+id/tv_pluse_line_break1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="60dp"
+            android:layout_below="@+id/tv_editor_pick_title"
+            android:background="@drawable/text_line"
+            />
+
+        <TextView
+            android:id="@+id/tv_pulse_content_title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="China Has High-Performing Companies - It Just Needs a Lot More of Them"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/tv_pluse_line_break1"
+            android:layout_marginTop="8dp"
+            />
+        <TextView
+            android:id="@+id/tv_pulse_content_status1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gordon Orr /131 shares"
+            android:layout_below="@+id/tv_pulse_content_title1"
+            android:layout_marginTop="4dp"
+            />
+        <ImageView
+            android:id="@+id/iv_pulse_img1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pulse_img1"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:layout_below="@+id/tv_pulse_content_status1"
+            android:layout_marginTop="8dp"
+            />
+
+
+    </RelativeLayout>
+
+
+
 </FrameLayout>
